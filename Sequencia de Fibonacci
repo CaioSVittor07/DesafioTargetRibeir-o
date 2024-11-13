@@ -1,0 +1,22 @@
+print ('=' *40)
+print (' ' *2, 'Consulta da Sequência de Fibonacci')
+print ('=' *40)
+
+
+n1 = int(0)
+n2 = int(1)
+n3 = int(0)
+
+resul = int(input('Digite um número: '))
+while resul > n3:
+
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+
+if resul == 0 or resul == 1:
+    print ('O número faz parte da sequência de Fibonacci.')
+elif resul == n3:
+    print ('O número faz parte da sequência de Fibonacci.')
+else:
+    print ('O número digitado não faz parte da sequência de Fibonacci.')
